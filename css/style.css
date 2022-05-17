@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+}
+
+/*Nav bar styling using flexbox properties*/
+
+.nav-bar{
+    margin: 10px 40px 70px 30px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*menu styling*/
+
+.nav-bar > .nav-links{
+    flex: 2;
+    justify-content: start;
+    margin-left: 100px;
+    margin-right: 400px
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: right;
+}
+
+
+.nav-links >ul> li{
+    display: inline;
+    padding-right: 40px;
+}
+.nav-links >ul> li>a{
+    color: hsl(0, 0%, 41%);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/*Add padding between link and icon*/
+
+.nav-links >ul> li>img{
+    padding-left: 6px;
+}
+
+.nav-bar > .button > .nav-button{
+    padding: 8px 10px;
+    border-radius: 13px;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+    background-color: #fff;
+}
+
+.nav-bar > .button > .button-one{
+  margin-right: 40px;
+  border: none;
+}
+
+.nav-bar > .button > .button-two{
+   border: .5px solid hsl(0, 0%, 41%);
+}
+
+/*Drop-down navigation styling*/
+
+
+.nav-bar >.nav-links> ul> li:hover > ul{
+
+    display: block;
+    border: 2px solid #fff;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -60px;
+    padding: 3px 30px;
+    background: white;
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.3);
+    z-index: 1;
+  
+}
+.nav-bar >.nav-links> ul> li:hover >img[src]{
+    content: url("../images/icon-arrow-up.svg");
+}
+
+.nav-links > ul> li:hover > ul > li {
+    padding-bottom: 10px;
+}
+
+.nav-links > ul> li:hover > ul > li >img{
+   padding-right: 10px;
+}
+
+.nav-links > ul> li:hover > ul > li a{
+    color: gray;
+    font-size: 13px;
+}
+
+.nav-links > ul> li:hover > #company {
+    margin-left: 100px;
+}
+
+/*Hero section styling*/
+
+.hero-section{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: fit-content;
+    width: auto;
+    flex-wrap: wrap;
+    max-width: 1440px;
+}
+
+.hero-section > .hero-text{
+    width: 55%;
+   padding-left: 200px;
+   padding-top: 50px;
+}
+
+.hero-section > .hero-image{
+    width: 45%;
+}
+
+.hero-section > .hero-text > .header{
+    font-size: 1.9em;
+    padding-bottom: 30px;
+}
+
+.hero-section > .hero-text > .paragraph{
+    width: 80%;
+    line-height: 1.5;
+    color: hsl(0, 0%, 41%);
+    padding-bottom: 30px;
+}
+
+
+.hero-section > .hero-text > .hero-button{
+    padding: 12px 12px;
+    border-radius: 13px;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    background-color:  hsl(0, 0%, 8%);
+    color:  hsl(0, 0%, 98%);
+    border: none;
+    margin-bottom: 95px;
+}
+
+.hero-section > .hero-text > .hero-button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+}
+
+.hero-section > .hero-text > .hero-icons{
+    display: flex;
+}
+
+.hero-section > .hero-text > .hero-icons > img{
+    width: 9%;
+    margin-right: 60px;
+}
+
+p{
+    font-size: 18px;
+}
+
+li>ul{
+    display: none;
+}
+.hamburger-icon{
+    display: none;
+}
+
+/*Mobile Styling at width 375px*/
+
+@media (max-width:375px){
+    .nav-links{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    .nav-button{
+        display: none;
+    }
+
+    .hamburger-icon{
+        display:block;
+        margin-right: 0px;
+        /* justify-content: right; */
+    }
+}
