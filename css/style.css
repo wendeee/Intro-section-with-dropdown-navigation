@@ -10,7 +10,7 @@
 }
 body{
     min-height: 100vh;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 98%);
 }
 
 .container{
@@ -189,25 +189,7 @@ li>ul{
     display: none;
 }
 
+
+
 /*Mobile Styling at width 375px*/
 
-@media (max-width:375px){
-    .nav-links{
-        display: none;
-    }
-
-    .container{
-        width: 100%;
-        max-width: fit-content;
-    }
-
-    .nav-button{
-        display: none;
-    }
-
-    .hamburger-icon{
-        display:block;
-        margin-right: 0px;
-        /* justify-content: right; */
-    }
-}
