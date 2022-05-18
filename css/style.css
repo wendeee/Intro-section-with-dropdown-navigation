@@ -59,6 +59,10 @@ body{
     font-weight: 500;
 }
 
+.nav-links > ul> li >a:hover{
+    color: hsl(0, 0%, 8%);
+}
+
 /*Add padding between link and icon*/
 
 .nav-links >ul> li>img{
@@ -104,6 +108,7 @@ body{
     content: url("../images/icon-arrow-up.svg");
     cursor: pointer;
 }
+
 
 .nav-links > ul> li:hover > ul > li {
     padding-bottom: 10px;
