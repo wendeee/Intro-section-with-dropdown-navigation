@@ -16,14 +16,51 @@
   </style>
 </head>
 <body>
+  <div class="sidebar" id="side-bar" >
+      <img class="close-menu" id="close-nav" onclick="closeNav()" src="images/icon-close-menu.svg" alt="">  
+      <div class="mobile-menu">
+
+        <ul class="">
+          <li ><a href="#" class="arrow-icon">Features </a><img class="img-icon" src="images/icon-arrow-down.svg" alt="icon-arrow-down">
+           <ul class="sub-menu">
+             <li><img src="images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+             <li><img src="images/icon-calendar.svg" alt=""><a href="#">Calender</a></li>
+             <li><img src="images/icon-reminders.svg" alt=""><a href="#">Reminder</a></li>
+             <li><img src="images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+           </ul>
+         </li>
+          <li  ><a href="#" class="arrow-icon">Company</a><img class="img-icon" src="images/icon-arrow-down.svg" alt="icon-arrow-down">
+            
+           <ul class="sub-menu">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+         </ul>
+         </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+       </div>
+       <div class="mobile-menu-button">
+         <button class="button-one nav-button">Login</button>
+         <button class="button-two nav-button">Register</button>
+ 
+       </div> -->
+ 
+
+      </div>  
+     
+  </div>
   <div class="container">
+    
 
     <!-- Header -->
 
     <nav class="nav-bar">
-      <div class="logo">
-       <a href=""><img src="images/logo.svg" alt="logo"></a>
-      </div>
+      
+      <img  class="logo" src="images/logo.svg" alt="logo">
+       
+      
       <div class="nav-links">
        <ul>
          <li><a href="#">Features </a><img src="images/icon-arrow-down.svg" alt="icon-arrow-down">
@@ -51,27 +88,30 @@
 
       </div>
 
-      <div class="hamburger-icon">
-        <img src="images/icon-menu.svg" alt="">
-      </div>
+     
+        <img  class="hamburger-icon" id="open-nav" onclick="openNav()" src="images/icon-menu.svg" alt="hamburger-menu">
+
+        
+      
     </nav>
 
    <!-- main section -->
 
     <main class="hero-section">
       <div class="hero-image">
-        <img src="images/image-hero-desktop.png" alt="hero-image" width="380px" height="480px">
+        <img src="images/image-hero-mobile.png" alt="hero-image" >
       </div>
       <div class="hero-text">
         <div class="header">
-          <h1>Make<br> remote work</h1>
+          <h1><span>Make </span>remote work</h1>
         </div>
-        <div class="paragraph">
+        <div class="hero-paragraph">
           <p>Get your team in sync, no matter your location. Streamline processes, 
             create team rituals, and watch productivity soar.</p>
         </div>
-        <button class=" hero-button ">Learn more</button>
-
+        <div class="btn">
+        <button class="hero-button ">Learn more</button>
+      </div>
         <div class="hero-icons">
           <img src="images/client-databiz.svg" alt="databiz-icon">
           <img src="images/client-audiophile.svg" alt="audiophile-icon">
@@ -82,38 +122,7 @@
     </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
-
-
-
-
-
-
-
-
-
-
 
 
  
@@ -122,5 +131,30 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">wendy</a>.
   </div>
+
+  <script>
+    function openNav(){
+      document.getElementById("open-nav").style.display = "none"
+      // document.getElementById("side-bar").style.marginLeft = "220px"
+      document.getElementById("side-bar").style.display="block"
+      // document.getElementById("side-bar").style.animation = "fade-in 4s" 
+      
+      document.getElementById("side-bar").style.width = "220px"
+      document.getElementById("close-nav").style.display = "block"
+
+    }
+
+    function closeNav() {
+      document.getElementById("close-nav").style.display = "none"
+      document.getElementById("side-bar").style.width = "0"
+      document.getElementById("open-nav").style.display = "block"
+    }
+
+    // document.querySelector(".arrow-icon").addEventListener("click", function(){
+    //   document.querySelector(".img-icon").src = "images/icon-arrow-up.svg";
+    //   document.querySelector(".sub-menu").style.display = "block"
+      
+    // })
+  </script>
 </body>
 </html>
