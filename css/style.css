@@ -378,7 +378,7 @@ body{
     }
 
     .logo{
-        width: 10%;
+        width: 8%;
     }
 
    
@@ -415,7 +415,7 @@ body{
 }
 .nav-links >ul> li>a{
     color: hsl(0, 0%, 41%);
-    font-size: 12px;
+    font-size: 14px;
     /* font-weight: 500; */
 }
 
@@ -432,7 +432,7 @@ body{
 .nav-bar > .button > .nav-button{
     padding: 8px 10px;
     border-radius: 13px;
-    font-size: 12px;
+    font-size: 14px;
     /* font-weight: 300; */
     cursor: pointer;
     color: hsl(0, 0%, 41%);
@@ -502,7 +502,8 @@ body{
     width: 35%;
     /* flex-basis: 40%; */
    padding-left: 0px;
-   margin-right: 100px;
+   margin-right: 180px;
+   margin-top: 40px;
    /* margin-left: -400px; */
    
    text-align: left;
@@ -547,7 +548,7 @@ body{
     background-color:  hsl(0, 0%, 8%);
     color:  hsl(0, 0%, 98%);
     border: none;
-    margin-bottom: 85px;
+    /* margin-bottom: 100px; */
 }
 
 .hero-section > .hero-text > .hero-button:hover{
@@ -560,7 +561,7 @@ body{
 .hero-section > .hero-image{
     width: 30%;
     
-    margin-right: 60px;
+    margin-right: 80px;
 }
 
 .hero-section > .hero-image img[src]{
@@ -577,12 +578,13 @@ body{
 
 
 
-/* .hero-section > .hero-text > .hero-icons{
-    display: flex;
-} */
+.hero-section > .hero-text > .hero-icons{
+    margin-top: 80px;
+}
 
 .hero-section > .hero-text > .hero-icons > img{
     max-width: 100%;
+    
     margin-right: 0px;
     padding-bottom: 0px;
     padding-right: 10px;
